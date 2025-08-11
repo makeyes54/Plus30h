@@ -13,9 +13,7 @@ from telethon import TelegramClient, events
 from telethon.errors import SessionPasswordNeededError, PhoneCodeInvalidError
 
 load_dotenv()
-BOT_TOKEN = os.getenv("8477194068:AAGsO_GcMZWumoYwr_DqjvagSxynPcndYyc")
-if not BOT_TOKEN:
-    raise RuntimeError("Set BOT_TOKEN in .env")
+BOT_TOKEN = "8477194068:AAGsO_GcMZWumoYwr_DqjvagSxynPcndYyc"
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=BOT_TOKEN)
